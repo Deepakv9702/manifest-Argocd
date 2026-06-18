@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tetris
+  name: movie
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: tetris
+      app: movie
   template:
     metadata:
       labels:
-        app: tetris
+        app: movie
     spec:
       containers:
-      - name: tetris
+      - name: movie
         image: shaikmustafa/paytm:movie
         ports:
         - containerPort: 3000   # Use port 3000
@@ -23,10 +23,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: tetris-service
+  name: movie-service
 spec:
   selector:
-    app: tetris
+    app: movie
   ports:
   - protocol: TCP
     port: 80                 # Expose port 80
