@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
       - name: movie
-        image: shaikmustafa/paytm:movie
+        image: shaikmustafa/mytetrisgame:v1
         ports:
-        # - containerPort: 3000   # Use port 3000
+         - containerPort: 3000   # Use port 3000
 
 ---
 apiVersion: v1
