@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
       - name: movie
-        image: shaikmustafa/cycle:latest
+        image: shaikmustafa/paytm:movie
         ports:
-        - containerPort: 3000   # Use port 3000
+        # - containerPort: 3000   # Use port 3000
 
 ---
 apiVersion: v1
